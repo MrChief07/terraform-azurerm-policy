@@ -1,10 +1,8 @@
 resource "azurerm_policy_set_definition" "monitoring_governance" {
-
   name         = "monitoring_governance"
   policy_type  = "Custom"
   display_name = "Monitoring Governance"
   description  = "Contains common Monitoring Governance policies"
-
   metadata = <<METADATA
     {
     "category": "${var.policyset_definition_category}"
